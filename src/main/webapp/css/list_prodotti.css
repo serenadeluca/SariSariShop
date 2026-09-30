@@ -1,0 +1,96 @@
+/* ===========================
+   CATALOGO – STILE DEFINITIVO
+=========================== */
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 22px;
+    color: var(--color-primary);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-left: 5px solid var(--color-secondary);
+    padding-left: 10px;
+}
+
+/* Card */
+.prodotto {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+.prodotto:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+
+/* Immagine */
+.prodotto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* Titolo */
+.prodotto h2, .prodotto h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+/* Descrizione */
+.prodotto p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* Prezzo */
+.prodotto p strong {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--color-primary);
+    display: block;
+    margin: 10px 0;
+}
+
+/* Bottone */
+.prodotto a {
+    display: inline-block;
+    background: #FFD700;
+    color: #6A0DAD;
+    padding: 10px 16px;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin: 10px 6px;
+    transition: 0.2s;
+}
+.prodotto a:hover {
+    background: #4a087c;
+    color: #FFD700;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .prodotto img {
+        height: 160px;
+    }
+}

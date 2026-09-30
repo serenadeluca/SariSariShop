@@ -1,0 +1,76 @@
+/* Container principale che centra il box login nella pagina */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Occupa gran parte dello schermo in verticale */
+    padding: 20px;
+}
+
+/* Il box contenitore del form */
+.login-form-box {
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg-alt); /* Sfondo leggermente violaceo */
+    padding: 30px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-box h2 {
+    color: var(--color-primary); /* Viola */
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Gruppi di input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+}
+
+/* Messaggio di errore (apparirà solo se la Servlet lo invia) */
+.error-message {
+    background-color: #ffebee;
+    color: var(--color-accent); /* Rosso */
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #ffcdd2;
+}
+
+/* Link registrazione */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.register-link a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.register-link a:hover {
+    color: var(--color-accent);
+}

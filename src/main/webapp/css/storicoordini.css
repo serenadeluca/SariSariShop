@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* ====== STORICO ORDINI - SARI SARI SHOP ====== */
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Container principale */
+.storico-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Tabella ordini */
+.tabella-ordini {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabella-ordini th {
+    background: #ffcc00;
+    color: #333;
+    padding: 12px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tabella-ordini td {
+    padding: 12px;
+    font-size: 14px;
+    color: #444;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternanza righe */
+.tabella-ordini tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* Hover */
+.tabella-ordini tr:hover {
+    background: #fff7d6;
+    transition: 0.2s;
+}
+
+/* Stato ordine */
+.stato {
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.stato.in-elaborazione {
+    background: #ffe9a8;
+    color: #8a6d00;
+}
+
+.stato.spedito {
+    background: #c8e6c9;
+    color: #256029;
+}
+
+.stato.consegnato {
+    background: #bbdefb;
+    color: #0d47a1;
+}
+
+/* Link dettaglio ordine */
+.dettaglio-link {
+    color: #d35400;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dettaglio-link:hover {
+    text-decoration: underline;
+}
