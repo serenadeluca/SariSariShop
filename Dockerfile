@@ -7,6 +7,9 @@ COPY ./META-INF /usr/local/tomcat/webapps/ROOT/META-INF
 
 COPY ./src/main/java /app/src/main/java
 
+RUN curl -L -o /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar \
+    https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar
+
 RUN mkdir -p /usr/local/tomcat/webapps/ROOT/WEB-INF/classes && \
     find /app/src/main/java -name "*.java" > /tmp/sources.txt && \
     javac -encoding UTF-8 \
