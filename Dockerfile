@@ -12,6 +12,6 @@ COPY ./home.jsp /usr/local/tomcat/webapps/ROOT/home.jsp
 COPY ./barra_di_ricerca.jsp /usr/local/tomcat/webapps/ROOT/barra_di_ricerca.jsp
 COPY ./favicon2.ico /usr/local/tomcat/webapps/ROOT/favicon2.ico
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["catalina.sh", "run"]
