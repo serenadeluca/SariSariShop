@@ -1,6 +1,6 @@
 FROM tomcat:9.0
 
-# Copia il contenuto della tua webapp dentro Tomcat
+# Copia TUTTI i file della tua webapp dentro ROOT
 COPY ./ /usr/local/tomcat/webapps/ROOT/
 
 EXPOSE 8080
