@@ -13,7 +13,7 @@
         driverClassName="com.mysql.cj.jdbc.Driver"
 
         username="root"
-        password="r4ilwey"
+        password="tHYPiITdpkDeSRevJoMsIeFwqEYPSgaK"
 
         url="jdbc:mysql://maglev.proxy.rlwy.net:30450/railway?useSSL=true&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC"/>
 
